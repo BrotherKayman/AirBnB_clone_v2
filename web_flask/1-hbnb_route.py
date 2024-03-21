@@ -7,12 +7,14 @@ app = Flask(__name__)
 
 
 @app.route('/', strict_slashes=False)
-def main():
+def greet():
+    """ Returns Hello HBNB """
     return "Hello HBNB!"
 
 
 @app.route('/hbnb', strict_slashes=False)
-def _hbnb():
+def hbnb():
+    """ Returns HBNB """
     return "HBNB"
 
 
